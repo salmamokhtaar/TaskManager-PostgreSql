@@ -10,6 +10,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
 // Simple health check
+// test api 
 app.get("/health", (req, res) => {
   res.json({ ok: true, env: "up" });
 });
